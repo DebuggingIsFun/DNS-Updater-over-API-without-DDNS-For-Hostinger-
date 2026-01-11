@@ -27,7 +27,7 @@ The values are currently for the [hostinger_ddns_py](./hostinger_ddns.py)
 - */5 1 * * * cd /app && /usr/local/bin/python /app/hostinger_ddns.py >> /var/log/cron.log 2>&1%
     - */5 1 * * * | is for running every 5 Minutes during the 1 AM (adjust to you needs when you think you IP Changes)
     - cd /app && /usr/local/bin/python /app/hostinger_ddns.py | change in the working directory (so we can use .env file) and run the python script
-    - \\>> /var/log/cron.log 2>&1% | redirect the output for logging into this file (so the script itself does not log, only needs to output something to console)
+    - \>> /var/log/cron.log 2>&1% | redirect the output for logging into this file (so the script itself does not log, only needs to output something to console)
 
 ### Script Function
 Work in progress.
