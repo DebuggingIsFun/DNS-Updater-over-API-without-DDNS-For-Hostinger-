@@ -1,0 +1,4 @@
+CRON_TZ=Europe/Berlin
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+*/5 1 * * * cd /app && /usr/local/bin/python /app/hostinger_ddns.py >> /var/log/cron.log 2>&1% 
